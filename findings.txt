@@ -1,0 +1,11 @@
+3 findings found:
+
+[beaconing] host=10.20.4.62 dst=203.0.113.77 port=8443
+evidence: 4 repeated flows about every 300 seconds, destination/port not in baseline for this host
+
+[port_scan] host=10.20.4.77 dst=10.20.4.10, 10.20.4.11, 10.20.4.12, 10.20.4.13, 10.20.4.14, 10.20.4.15 port=22, 445, 3389
+evidence: host touched 6 internal destinations on admin ports, while baseline port(s) for this host was only [443]
+
+[exfil] host=10.20.4.45 dst=198.51.100.42 port=443
+evidence: bytes_out was 1887436800 while host p95 was about 3072 bytes
+

@@ -1,0 +1,1 @@
+I used AI to read the files and understand the meaning of them. Once i got the full picture i started coding the detector python file. I ran it and tested the output with AI for checking it.
